@@ -118,13 +118,11 @@
         </div>
 
 
-        <!--Rooms sections-->
-        <section class="room" id="Rooms">
+        <!--Rooms sections con HTML-->
+        <!-- <section class="room" id="Rooms">
             <div class="maw-witch">
                 <h1 class="title">Rooms</h1>
                
-
-
                 <div class="btn" id="contenedorDesafio">
                     <button  class="btn" onclick="showRooms()">ShowRooms</button>  
                     <button  class="btn" onclick="sortByPrice()">sortByPrice</button>
@@ -132,12 +130,9 @@
                     <button class="btn" onclick="booked()">Booked</button>
                     <button class="btn" onclick="onlyDept()">FilterDept</button>
                     <input class="btn" type="button" value="Actualizar" onclick="location.reload()"/>
-            
-                </div>
+                </div> -->
 
-
-
-                <div class="room-content">
+                <!-- <div class="room-content">
                     <div class="card">
                         <div class="box">
                             <img src="./img/room1.jpg" alt="Imagen de habitacion">
@@ -188,12 +183,26 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+
+       <!--Room session Con JS DOM de Cards-->
+       <section class="room" id="Rooms">
+            <div class="maw-witch">
+                <h1 class="title">Rooms</h1>
+                <!--Agrego campo  para filtrar y botones search y mostrar reserva-->
+                <div>
+                    <input type="text" placeholder="Search room" id="inputSearch">
+                    <button id="filter" class="btn">Search</button>
+                    <button id="mostrarReserva" class="btn">ver reserva </button>
+                    <span id="counter"></span>
+                </div>
+                <!--Cards de Rooms-->
+                <div id="contenedora" class="room-content"></div>
+            </div>
         </section>
-
+        <!--cierro Cards-->
+        <!--cierro el dommm-->
        
-
-
-
 
         <footer>
             <span>Create by <a href="#">LeoN.</a> | <span class="far fa-copyright"></span> 2022 All right reserved.</span>
@@ -205,10 +214,11 @@
                 <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
-        </footer> 
+        </footer > 
 
-        <!--Link a JS-->
-        <script src="./script.js"></script>
+        <!--Links a JS-->
+        <script src="./scripts/products.js"></script>
+        <script src="./scripts/script.js"></script>
 
         <!--Script de Boostrap-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
