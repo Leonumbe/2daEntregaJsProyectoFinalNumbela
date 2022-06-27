@@ -29,10 +29,10 @@
             <nav class="navbar">
                 <div class="max-width">
                     <!--logo + btm al index-->
-                    <div class="logo"><a href="#home">R<span>f</span>R</a></div>
+                    <div class="logo"><a href="../index.html">R<span>f</span>R</a></div>
                     <!--Menu de navegacion + stick-->
                     <ul class="menu">
-                        <li><a href="#home" class="">Home</a></li>
+                        <li><a href="../index.html" class="">Home</a></li>
                         <li><a href="#about"class="">About Us</a></li>
                         <li><a href="#process"class="">The Process</a></li>
                         <li><a href="#Rooms"class="">Rooms</a></li>
@@ -45,31 +45,35 @@
             </nav> 
         </header>
         
-        </main>
+     
         <!--The Process sections-->
-        <div class="Process" id="process">
-            <div class="max-width">
-                <h1 id="bookedOn" class="title">booked</h1>
-                <div class="process-container">
-                    
+        <section class="room" id="">
+            <div class="maw-width">
+                <h1 class="title">Booked</h1>
+                <div  class="process-container">
+                    <div id="bookedInProgress">
+
+                    </div> 
                 </div>
             </div>
-        </div>
+        </section>
+        <a id="filter" class="btn" href="../index.html">Back</a>
 
+
+       
         <!--Room session Con JS DOM de Cards-->
-        
-       <section class="room" id="Rooms">
+       <!--<section class="room" id="">
             <div class="maw-witch">
-                <h1 class="title">Selection</h1>
+                <h1 class="title">Selection</h1>-->
                 <!--Agrego campo  para filtrar y botones search y mostrar reserva-->
-                <div>
+                <!--<div>
                     <input type="text" placeholder="Search room" id="inputSearch">
                     <button id="filter" class="btn">Search</button>
                     <button id="mostrarReserva" class="btn">ver reserva <span id="counter"></span></button>
-
+                    <a id="filter" class="btn" href="../index.html">Back</a>
                 </div>
-                <div id="bookedOn"></div>
-        </section>
+                
+        </section>-->
         <!--cierro Cards-->
 
 
@@ -78,18 +82,23 @@
        
        
         <!-- Form-->
-        <h1 class="title">Form</h1>
-        <h2 class="subT">Complete the form</h2>
-        <form action="" id="">
-            <input type="text" name="name" id="name" placeholder="Name">
-            <input type="text" name="surname" id="surname" placeholder="Surname">
-            <input type="email" name="email" id="email" placeholder="nn@gmail.com">
-            <input type="number" name="phone" id="phone" placeholder="cellphone number">
-            <input type="textArea" name="dato" id="dato" placeholder="write your message here">
-            <button id="terminarPedido" class="btn">Submit</button>
-        </form>
+        <section class="room" id="">
+            <div class="maw-witch">
+                <h1 class="title">Form</h1>
+                <h2 class="subT">Complete the form</h2>
+                <form action="" id="">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="text" name="surname" id="surname" placeholder="Surname">
+                    <input type="email" name="email" id="email" placeholder="nn@gmail.com">
+                    <input type="number" name="phone" id="phone" placeholder="cellphone number">
+                    <input type="textArea" name="dato" id="dato" placeholder="write your message here">
+                    <button id="terminarPedido" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>
         <!--Cierro Form-->
-            
+        <!--Cards de Rooms-->
+        
         <!--cierro el dommm-->
        
 
@@ -105,15 +114,15 @@
             </div>
         </footer> 
 
-        <!--Links a JS-->
-        <script src="../scripts/products.js"></script>
-        <script src="../scripts/script.js"></script>
-
         <!--Script de Boostrap-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
         <!--Script de Js Scroll-->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script> AOS.init({duration: 1000});</script> 
+
+        <!--Links a JS-->
+        <script src="../scripts/products.js"></script>
+        <script src="../scripts/pages.js"></script>
 </body>
 </html>
