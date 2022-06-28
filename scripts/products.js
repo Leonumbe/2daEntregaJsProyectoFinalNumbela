@@ -6,7 +6,7 @@ let rooms  = [
         "name":"Charleroi",
         "descrip":"lorem",
         "price": 50,
-        "img":"../img/room1.jpg"
+        "img":"https://i.ibb.co/CwR89pX/room1.jpg"
     },
     {
         "id":"2",
@@ -14,7 +14,7 @@ let rooms  = [
         "name":"Namur",
         "descrip":"lorem",
         "price": 55,
-        "img":"../img/room2.jpg"
+        "img":"https://i.ibb.co/Pz3J2GD/room2.jpg"
     },
     {
         "id":"3",
@@ -22,7 +22,7 @@ let rooms  = [
         "name":"Nivelles",
         "descrip":"lorem",
         "price": 45,
-        "img":"../img/room3.jpg"
+        "img":"https://i.ibb.co/Z61ksvL/room3.jpg"
     },
     {
         "id":"4",
@@ -30,7 +30,7 @@ let rooms  = [
         "name":"Moron",
         "descrip":"lorem",
         "price": 70,
-        "img":"../img/room4.jpg"
+        "img":"https://i.ibb.co/LNgn5Cd/room4.jpg"
     },
     {
         "id":"5",
@@ -38,7 +38,7 @@ let rooms  = [
         "name":"Luven",
         "descrip":"lorem",
         "price": 75,
-        "img": "../img/room5.jpg"
+        "img": "https://i.ibb.co/zrpbgFp/room5.jpg"
     },
     {
         "id":"6",
@@ -46,6 +46,6 @@ let rooms  = [
         "name":"Artwerpen",
         "descrip":"lorem",
         "price": 60,
-        "img": "../img/room6.jpg"
+        "img": "https://i.ibb.co/7Jzrd57/room6.jpg"
     }
 ];
