@@ -8,6 +8,7 @@ if (JSON.parse(localStorage.getItem('reserva'))){
     localStorage.setItem('reserva', JSON.stringify([]))
     reserva = JSON.parse(localStorage.getItem('reserva'))
 }
+
 //---------------pagina reserva---------------------//
 //Monto total mas fee 0.1
 //reduce ciclo de producto mas acum
@@ -28,9 +29,10 @@ const body = document.getElementById('bookedInProgress');
         body.innerHTML += noBookedSelection; 
     }else{
         const summary = `
-        <h1 class="subT">Reserve Selection</h1>
+        <h1 class="subT">Booked Selection</h1>
         <div id='tBody'></div>
-        <button class='btn'>Finalizar Reserva</button>
+        <a id="filter" class="btn" href="../index.html">Back</a>
+        <a href="#Form" class="btn">Finalizar Reserva</a>
         `
         body.innerHTML += summary
         const tbody = document.getElementById('tBody')
