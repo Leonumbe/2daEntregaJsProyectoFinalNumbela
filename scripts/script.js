@@ -3,6 +3,7 @@
 //VAriables globales
 const addRoom = []
 const bookedRoom = []
+let reserva;
 
 // creo objeto habitaciones
 class Room{
@@ -136,7 +137,7 @@ function elegido (){
 
 //------------------------NUeva Entrega Eventos-Dom-Storage-----------------------------//
 //declaracion variables golabales
-let reserva;
+
 
 //Nuestra reserva la guardamos en el localStorage
 if (JSON.parse(localStorage.getItem('reserva'))){
