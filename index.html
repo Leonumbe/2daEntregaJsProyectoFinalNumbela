@@ -118,95 +118,23 @@
         </div>
 
 
-        <!--Rooms sections con HTML-->
-        <!-- <section class="room" id="Rooms">
-            <div class="maw-witch">
-                <h1 class="title">Rooms</h1>
-               
-                <div class="btn" id="contenedorDesafio">
-                    <button  class="btn" onclick="showRooms()">ShowRooms</button>  
-                    <button  class="btn" onclick="sortByPrice()">sortByPrice</button>
-                    <button  class="btn"onclick="addNewRoom()">Add Rooms</button>
-                    <button class="btn" onclick="booked()">Booked</button>
-                    <button class="btn" onclick="onlyDept()">FilterDept</button>
-                    <input class="btn" type="button" value="Actualizar" onclick="location.reload()"/>
-                </div> -->
-
-                <!-- <div class="room-content">
-                    <div class="card">
-                        <div class="box">
-                            <img src="./img/room1.jpg" alt="Imagen de habitacion">
-                            <div class="head">Charleroi</div>
-                            <div class="price">$ 50.00- Euros</div>
-                            <div class="btn">Booked</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="box">
-                            <img src="./img/room2.jpg" alt="Imagen de habitacion">
-                            <div class="head">Namur</div>
-                            <div class="price">$ 55.00- Euros</div>
-                            <div class="btn">Booked</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="box">
-                            <img src="./img/room3.jpg" alt="Imagen de habitacion">
-                            <div class="head">Nivelles</div>
-                            <div class="price">$ 45.00- Euros</div>
-                            <div class="btn">Booked</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="box">
-                            <img src="./img/room4.jpg" alt="Imagen de habitacion">
-                            <div class="head">Moron</div>
-                            <div class="price">$ 70.00- Euros</div>
-                            <div class="btn">Booked</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="box">
-                            <img src="./img/room5.jpg" alt="Imagen de habitacion">
-                            <div class="head">Luven</div>
-                            <div class="price">$ 75.00- Euros</div>
-                            <div class="btn">Booked</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="box">
-                            <img src="./img/room6.jpg" alt="Imagen de habitacion">
-                            <div class="head">Antwerpen</div>
-                            <div class="price">$ 60.00- Euros</div>
-                            <div class="btn">Booked</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
        <!--Room session Con JS DOM de Cards-->
        <section class="room" id="Rooms">
             <div class="maw-witch">
                 <h1 class="title">Rooms</h1>
-                <div class="" id="contenedorDesafio">
-                    <button  class="btn" onclick="showRooms()">ShowRooms</button>  
-                    <button  class="btn" onclick="sortByPrice()">sortByPrice</button>
-                    <button  class="btn"onclick="addNewRoom()">Add Rooms</button>
-                    <button class="btn" onclick="booked()">Booked</button>
-                    <button class="btn" onclick="onlyDept()">FilterDept</button>
-                    <input class="btn" type="button" value="Actualizar" onclick="location.reload()"/>
-            
-                </div>
+              
                 <!--Agrego campo  para filtrar y botones search y mostrar reserva-->
                 <div>
-                    <input type="text" placeholder="Search room" id="inputSearch">
-                    <button id="filter" class="btn">Search</button>
+                    <input type="text" placeholder=" Department or House" id="inputSearch">
+                    <button id="filtrar" class="btn">Search</button>
                     <a id="mostrarReserva" class="btn" href="./pages.html/booked.html">ver reserva</a>
-                    <span id="counter"></span>
+                    <span id="counter" class="btn"></span>
                 </div>
+
                 <!--Cards de Rooms-->
                 <div id="contenedora" class="room-content"></div>
+                <div id="buttonFilter"></div>
+
             </div>
         </section>
         <!--cierro Cards-->

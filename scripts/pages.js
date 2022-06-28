@@ -10,8 +10,8 @@ if (JSON.parse(localStorage.getItem('reserva'))){
 }
 
 //---------------pagina reserva---------------------//
-//Monto total mas fee 0.1
-//reduce ciclo de producto mas acum
+//Funcion suma
+//reduce ciclo de producto mas acum. Monto total mas fee 0.1
 const totalReserved = () => {
     return reserva.reduce((acumulador, prod) => acumulador + ((prod.price * 0.1 + prod.price) * prod.cantidad, 0 ))
  }
@@ -21,8 +21,8 @@ const body = document.getElementById('bookedInProgress');
     if(reserva.length == 0){
         const noBookedSelection = 
         `
-        <h1 class="subT">No ha seleccionado ninguna habitacion</h1>
-        <a class="btn" href="../index.html">
+        <h1 class="title">You are not selected any room</h1>
+        <a class="" href="../index.html">
             <button class="btn">Back</button>
         <a/>
         `
@@ -38,10 +38,10 @@ const body = document.getElementById('bookedInProgress');
         const tbody = document.getElementById('tBody')
             for (let i = 0; i < reserva.length; i++) {
                 const element = reserva[i];
-                const { id, category, name, price,img, cantidad } = element;
+                const { id, category, name, price, img, cantidad } = element;
                 const reservaFinal = `
                 <div id=${id}>
-                    <img src=${img} alt="">    
+                    <img src="${img}" alt="Imagen de la room">    
                     <div class="head">${name}</div>
                     <div class="subT">${category}</div>
                     <div>${cantidad}</div>
