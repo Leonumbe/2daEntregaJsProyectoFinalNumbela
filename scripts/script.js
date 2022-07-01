@@ -56,7 +56,14 @@ function addReserve(e){
     if (!inReserve) {
         //si no esta lo pusheo
         reserva.push({...roomSelect, cantidad: 1})
-        alert("Great Opcion")
+        //alert("Great Opcion")
+        Swal.fire({
+            position: 'top-right',
+            icon: 'success',
+            title: 'Great Opcion!!!',
+            showConfirmButton: false,
+            timer: 1500
+          })
     }else{
         //si esta lo borro y
         let filterReserve = reserva.filter(prod => prod.id != inReserve.id)

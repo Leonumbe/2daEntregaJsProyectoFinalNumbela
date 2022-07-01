@@ -35,7 +35,7 @@ if(reserva.length == 0){
     <h1 class="subT">Booked Selection</h1>
     <div id='tBody'></div>
     <a id="filter" class="btn" href="../index.html">Back</a>
-    <a href="#Form" class="btn">Finalizar Reserva</a>
+    <a href="#Form" class="btn">End Booked</a>
     `
     body.innerHTML += summary
     const tbody = document.getElementById('tBody')
@@ -50,7 +50,7 @@ if(reserva.length == 0){
             <div>${cantidad}</div>
             <div class="price">$${price.toLocaleString()}- Euros</div>
             <div>Precio*Q: $${(cantidad * price).toLocaleString()}</div>
-            <button id='delete' class='btn'>borrar</button>
+            <button id='delete' class='btn'>Delete</button>
         </div>`
         tbody.innerHTML += reservaFinal
     }
@@ -95,7 +95,16 @@ function endBooked() {
     userBooked = new user(name.value, surname.value, email.value, phone.value, text.value)
     
     while ((((userBooked.name == '') || (userBooked.surname == '')) || (userBooked.email == '')) || (userBooked.phone == '')){
-        alert('Sorry, but You must complete de form to submit!!!')
+        //alert('Sorry, but you must complete the form to submit!!!')
+        Swal.fire({
+            title: 'Sorry, but you must complete the form to be able to send it!!!',
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutUp'
+            }
+          })
         userBooked += new user(name.value, surname.value, email.value, phone.value, text.value)
         
     }
